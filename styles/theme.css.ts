@@ -20,6 +20,9 @@ export const global = createGlobalTheme(':root', {
     medium: '500',
     bold: '700',
   },
+  radius: {
+    semi: '20px',
+  },
 });
 export const vars = createThemeContract({
   color: {
@@ -46,3 +49,21 @@ export const lightTheme = createTheme(vars, {
     large: '24px',
   },
 });
+export const darkTheme = createTheme(vars, {
+  color: {
+    background: '#ffffff',
+    text: '#333333',
+    primary: '#0070f3',
+  },
+  spacing: {
+    small: '8px',
+    medium: '16px',
+    large: '24px',
+  },
+});
+
+export const breakPoint = {
+  medium: 'screen and (max-width: 40em)',
+  large: 'screen and (max-width: 768px)',
+  extraLarge: 'screen and (max-width: 1240px)',
+};

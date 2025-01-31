@@ -7,6 +7,7 @@ export const headerContainer = style({
   justifyContent: 'space-between',
   alignItems: 'center',
   borderBottom: '1px solid black',
+  marginBottom: '24px',
 });
 
 export const headerTitle = style({

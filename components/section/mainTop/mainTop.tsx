@@ -1,11 +1,13 @@
 'use client';
 
 import ImageSwiper from '@/components/utils/imageSwiper/imageSwiper';
+import * as styles from './mainTop.css';
 import SlideImage_first from '@/public/travel/1.webp';
 import SlideImage_second from '@/public/travel/2.webp';
 import SlideImage_third from '@/public/travel/3.webp';
 import SlideImage_fourth from '@/public/travel/4.webp';
 import SlideImage_fifth from '@/public/travel/5.webp';
+import Typing from '@/components/utils/typing/typing';
 const MainTop = () => {
   const slideImageArr = [
     {
@@ -30,9 +32,12 @@ const MainTop = () => {
     },
   ];
   return (
-    <div>
+    <section className={styles.mainTopContainer}>
       <ImageSwiper arr={slideImageArr} />
-    </div>
+      <div className={styles.mainTopComment}>
+        <Typing text="어디로 \n 여행을 떠나볼까요?" />
+      </div>
+    </section>
   );
 };
 
