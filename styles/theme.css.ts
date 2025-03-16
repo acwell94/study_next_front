@@ -21,6 +21,7 @@ export const global = createGlobalTheme(':root', {
     bold: '700',
   },
   radius: {
+    small: '8px',
     semi: '20px',
   },
 });

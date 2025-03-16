@@ -16,8 +16,10 @@ export const imageInnerContainer = style({
   width: '100%',
   aspectRatio: '4/5',
   overflow: 'hidden',
+  border: '1px solid gray',
   borderRadius: global.radius.semi,
   marginBottom: '16px',
+  // boxShadow: '2px 2px 2px gray',
 });
 
 export const imageTileTitle = style({

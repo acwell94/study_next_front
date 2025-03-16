@@ -12,7 +12,7 @@ const ImageTile = ({ arr }: ImageTypeWithTitleAuthorArrProps) => {
   return (
     <Swiper
       spaceBetween={20}
-      slidesPerView={4}
+      slidesPerView={3.8}
       className={styles.imageItemContainer}
     >
       {arr.map((el) => (

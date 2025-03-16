@@ -5,7 +5,6 @@ export const mainTopContainer = style({
   margin: '0 0 24px 0',
   width: '100%',
   maxWidth: '1280px',
-  aspectRatio: '16 / 9',
 });
 
 export const mainTopComment = style({

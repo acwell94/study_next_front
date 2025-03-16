@@ -13,6 +13,7 @@ export const swiperImageContainer = style({
   width: '100%',
   height: '100%',
   overflow: 'hidden',
+  aspectRatio: '16 / 9',
 });
 
 export const swiperSlide = style({

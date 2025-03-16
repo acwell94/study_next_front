@@ -45,7 +45,7 @@ export const subTitle = style({
 export const description = style({
   display: '-webkit-box',
   WebkitBoxOrient: 'vertical',
-  WebkitLineClamp: 3,
+  WebkitLineClamp: 2,
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   fontSize: global.fontSize.small,

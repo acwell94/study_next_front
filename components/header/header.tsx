@@ -1,12 +1,18 @@
-import MainIcon from '@/public/icon/mainIcon.png';
+'use client';
 import Hamburger from '@/public/icon/hamburger.png';
 import * as styles from './header.css';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import isRenderLayout from '../utils/isRenderLayout/isRenderLayout';
 const Header = () => {
-  return (
+  const pathname = usePathname();
+
+  const isRender = isRenderLayout(pathname);
+
+  return isRender ? null : (
     <header className={styles.headerContainer}>
-      <Image className={styles.logo} src={MainIcon} alt="main" />
-      <div className={styles.headerTitle}>Say Hi</div>
+      <div></div>
+      <div className={styles.headerTitle}>Perfume</div>
       <div className={styles.menuContainer}>
         <Image className={styles.menu} src={Hamburger} alt="menu" />
       </div>

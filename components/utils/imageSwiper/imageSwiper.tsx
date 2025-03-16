@@ -13,8 +13,6 @@ const ImageSwiper = ({ arr }: ImageArrProps) => {
     <Swiper
       spaceBetween={20}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
       className={styles.swiperContainer}
     >
       {arr.map((el) => (

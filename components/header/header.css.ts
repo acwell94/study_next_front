@@ -8,10 +8,12 @@ export const headerContainer = style({
   alignItems: 'center',
   borderBottom: '1px solid black',
   marginBottom: '24px',
+  padding: '20px 30px',
 });
 
 export const headerTitle = style({
-  fontSize: global.fontSize.medium,
+  fontSize: global.fontSize.large,
+  fontWeight: global.fontWeight.bold,
   cursor: 'default',
 });
 
